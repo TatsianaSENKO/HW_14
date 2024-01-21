@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 32px;
+  font-weight: 400;
+  color:#1b0443;
+  background: #FFFFFF;
+
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px 30px;
+}
+
+.container--header {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav {
+    width: 100%;
+}
+
+.container--product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container--footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a img {
+    width: 200px;
+    margin-right: 70px;
+}
+
+.nav__list.active {
+    display: flex;
+}
+
+.nav__toggle {
+    border: 1px solid rgb(191, 0, 255);;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 1.8rem;
+    border-radius: 25px;
+    color: white;
+    background: rgb(191, 0, 255);
+    border-radius: 42px;
+
+
+    display: none;
+    align-items: center;
+
+    cursor: pointer;
+
+    /* position: relative; */
+}
+
+.toggle__icon {
+    position: relative;
+}
+
+.toggle__icon,
+.toggle__icon::before,
+.toggle__icon::after {
+    display: inline-block;
+    width: 38px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.toggle__icon::before,
+.toggle__icon::after {
+    content: '';
+
+    position: absolute;
+    left: 0;
+}
+
+.toggle__icon::before {
+    top: -10px;
+}
+
+.toggle__icon::after {
+    bottom: -10px;
+}
+
+.nav__close {
+    display: none;
+
+    border: 0;
+    background: none;
+    font-size: 56px;
+    color: rgb(191, 0, 255);
+    cursor: pointer;
+    transform: rotate(45deg);
+    position: absolute;
+
+    top: 25px;
+    right: 5px;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+}
+
+.nav__item {
+    width: 100px;
+}
+.nav__item a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: font-weight 0.3s;
+}
+
+.nav__item a:hover {
+    font-weight: 700;
+    color: rgb(191, 0, 255);
+    border-bottom: 2px solid rgb(191, 0, 255);
+}
+
+.cart {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.cart__icon img{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.cart__icon{
+    position: relative;
+}
+
+.cart__icon::after{
+    content: '0';
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: rgb(191, 0, 255);
+
+    font-size: 1.0rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+
+.page__header {
+    background-color: rgb(245, 241, 255);
+    /* margin-bottom: 20px; */
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 60px 30px;
+}
+
+.product {
+
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 10px;
+
+    background-color: #fff;
+    padding: 35px 10px;
+    box-shadow: 0 0 20px rgb(210, 194, 248);
+    border-radius: 8px;
+}
+
+.product__image {
+    width: auto;
+    max-width: 300px;
+    max-height: 150px;
+}
+
+.product__title {
+    line-height: 26px;
+    color: #1b0443;
+    margin-top: 20px;
+    height: 65px;
+}
+
+.product__price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1b0443;
+    margin-top: 20px;
+}
+
+.product__wrap {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 80px;
+    box-shadow: 0 0 20px  rgb(245, 241, 255);
+    border-radius: 8px;
+}
+
+.product__category_page{
+    color: #9fa3a7;
+    margin-bottom: 30px;
+}
+
+.product__image_page{
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.product__content_page {
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.product__description_page {
+    font-size: 1.4rem;
+    line-height: 28px;
+}
+
+.product__price_page {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.product__reviews_page {
+    color: #9fa3a7;
+    font-size: 1.4rem;
+    line-height: 22px;
+    margin-top: 30px;
+}
+
+.product__btn_add {
+    width: 120px;
+    height: 40px;
+    font-size: 1.4rem;
+    border-radius: 25px;
+    color: white;
+    background: rgb(191, 0, 255);
+    border: 2px solid rgb(191, 0, 255);
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.product__btn_add:hover {
+    color: rgb(191, 0, 255);
+    background: white;
+    font-weight: 700;
+}
+
+.product__btn_add_page {
+    width: 200px;
+    height: 50px;
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.about__text {
+    height: 500px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 500px;
+}
+.contacts span{
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.footer {
+
+    border-top: 1px solid #B8B8B8;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__col {
+    display: flex;
+    gap: 100px;
+}
+
+.footer__link {
+    display: block;
+    width: 100px;
+    text-align: center;
+
+    transition: font-weight 0.3s;
+}
+
+.footer__link:hover {
+    font-weight: 700;
+    color: rgb(191, 0, 255);
+
+}
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social__item svg:hover {
+    fill: rgb(191, 0, 255);
+}
